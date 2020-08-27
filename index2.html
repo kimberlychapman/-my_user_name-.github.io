@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8" />
         <title>CSS3 Parallax scrolling slider | Script Tutorials</title>
-        <link href="./main.css" rel="stylesheet" type="text/css" />
+        <link href="./main.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body id="background" style="background-image: url('./images/scene.png');"></body>
         <!-- <header tabindex="0"> -->
-            <!-- <div id="pause"><img src="images/pause.png" onclick="document.querySelector('audio').pause()"></div> -->
+            <!-- <div id="roll-back"><img src="./images/roll-back.png">Click to Return to Writing Roller Page</div> -->
             <!-- <h2>The Mesozoic Era</h2> -->
             <!-- <a  href="http://www.script-tutorials.com/css3-parallax-scrolling-slider/" class="stuts">Back to original tutorial on <span>Script Tutorials</span></a> -->
         <!-- </header> -->
@@ -28,28 +29,42 @@
             <label for="r_3" class="pss_contr c3"></label>
             <label for="r_4" class="pss_contr c4"></label>
             <label for="r_5" class="pss_contr c5"></label>
-
             <div class="pss_slides">
                 <div class="pss_background"></div>
                 <ul> <!-- slides -->
-                    <li>
+                    <li><img src="images/lumie.png" alt="image01"/>
                         <div>And Now The Real Fun Begins!</div>
+                        <div id="explanation1">Concept:<br>
+                            1) Users write the story (some combination of writing and recording) using the story elements they rolled.<br>
+                            2) This process would include multiple phases: storyboarding, drafting, revising, animating, and showcasing.<br>
+                            3) This could either be done independently, or what might be interesting would be if users were able to write the story together: different models for collaborative story writing would need to be explored (and designed accordingly).<br>
+                            4) Plenty of ways to add supports: sentence starters, word prediction, many opportunities for supporting decoding/encoding skills.
+                        </div>
                     </li>
-                    <li><img src="images/characters-creek.png" alt="image02"/>
-                        <div>Introduction: Setting & Characters</div>
+                    <li><img src="images/storyboard.png" alt="image02"/>
+                        <div>Storyboarding</div>
+                        <!-- <div id="explanation 1">Concept:
+                            Users write the story (some combination of writing and recording) using the story elements they rolled.
+                            This process would include multiple phases: storyboarding, drafting, revising, animating, and showcasing.
+                            This could either be done independently, or what might be interesting would be if users were able to write the story together: different models for collaborative story writing would need to be explored (and designed accordingly).
+                            Plenty of ways to add supports: sentence starters, word prediction, many opportunities for supporting decoding/encoding skills.
+                        </div> -->
                         <!-- <div id="dino1" onclick="document.getElementById('dino1').play()" ondblclick="document.getElementById('dino1').pause()">The first dinosaurs appeared during the Triassic Period, and were much smaller than the dinosaurs that would emerge later on.  One of these early dinosaurs was the Coelophysis.  The Coelophysis was a carnivore— a "meat eater", walked on two legs, and was about 9 feet long and 3 feet tall: that's about as tall as a 3-year-old.  Coelophysis hunted in packs and even though they were small, they were very good hunters.  What made Coelophysis such good hunters was that they had extremely good vision; it is believed that a Coelophysis could see 8 times as far as humans can— which allowed them to spot prey (the dinosaurs they hunted) from a long distance.</div> -->
                         <!-- <div id="dino1-pause"><img src="images/pause.png" onclick="document.getElementById('dino1').pause()"></div> -->
                     </li>
-                    <li><img src="images/canoe.png" alt="image03" onclick="document.getElementById('jurassic1').play()" ondblclick="document.getElementById('jurassic1').pause()"/>
-                        <div>Setting up the Goal</div>
+                    <li><img src="" alt="image03" onclick="document.getElementById('jurassic1').play()" ondblclick="document.getElementById('jurassic1').pause()"/>
+                        <div>Drafting/Revision</div>
                     </li>
-                    <li><img src="images/prob_seq.png" alt="image04"/>
-                        <div>The Big Problem & the Sequence of Events</div>
+                    <li><img src="" alt="image04"/>
+                        <div>Animation</div>
                     </li>
-                    <li><img src="images/image4.png" alt="image05"/>
+                    <li><img src="" alt="image05"/>
                         <div>Showcase</div>
                     </li>
                 </ul>
+            </div>
+            <div id="roll-back">
+                <a href="./index.html" class="home"><img src="./images/roll-back.png"></a>
             </div>
         </div>
     </body>

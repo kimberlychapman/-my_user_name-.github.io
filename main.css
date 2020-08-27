@@ -1,4 +1,5 @@
 /* Page layout styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin:0;
     padding:0;
@@ -6,7 +7,8 @@
 body {
     background-color:#212121;
     color:#fff;
-    font:14px/1.3 Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size:14px/1.3;
 }
 header {
     background-color:#212121;
@@ -157,6 +159,7 @@ header .stuts span {
     list-style:none;
     position:relative;
     top:0;
+    font-family: 'Russo One', sans-serif;
 
     /* css3 transition */
     -webkit-transition:top ease-in 1.0s;
@@ -170,6 +173,7 @@ header .stuts span {
     opacity:0.1;
     position:relative;
     text-align:center;
+    font-family: 'Russo One', sans-serif;
 
     /* css3 transition */
     -webkit-transition:opacity ease-in 1.0s;
@@ -195,6 +199,7 @@ header .stuts span {
     border-radius:10px 10px 10px 10px;
     box-shadow:0 0 5px #FFFFFF inset;
     color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
     font-size:26px;
     /* left:-20%; */
     margin:0 auto;
@@ -211,18 +216,20 @@ header .stuts span {
     transition:left ease-in 1.0s; 
 }
 
-.pss_slides ul li #dino1{
+.pss_slides ul li #explanation1{
     background-color:#000000;
     border-radius:10px 10px 10px 10px;
     box-shadow:0 0 5px #FFFFFF inset;
     color:#FFFFFF;
-    font-size:14px;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
     left:50px;
     margin:0 auto;
     padding:20px;
+    text-align: left;
     position:absolute;
-    top:75%;
-    width:700px;
+    top:65%;
+    width:950px;
 
     /* css3 transition */
     -webkit-transition:left ease-in 1.0s;
@@ -254,7 +261,39 @@ header .stuts span {
 .sel_page_5:checked ~ .pss_slides ul li:nth-child(5) div {
     left:10%;
 }
-#pause{
-    margin-left: 15px;
-    padding-top: 10px;
+#roll-back{
+    position: fixed;
+    top:10px;
+    left:15px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size:100%;
+    /* font-size: 12pt; */
+}
+.home{
+    position: fixed;
+    top:10px;
+    left:15px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size:100%;
+    /* font-size: 12pt; */
+}
+a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size:100%;
+}
+#rollback:hover{
+    filter: hue-rotate(140deg);
+    -webkit-filter: hue-rotate(140deg);
+    -webkit-transform:scale(1.3);
+  transform:scale(1.3);
+}
+.home:hover{
+    /* filter: hue-rotate(140deg);
+    -webkit-filter: hue-rotate(140deg); */
+    -webkit-transform:scale(1.3);
+  transform:scale(1.3);
 }
